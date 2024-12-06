@@ -31,9 +31,9 @@ export const Login: React.FC = () => {
             <GamepadIcon className="w-12 h-12 text-purple-500 mx-auto" />
           </motion.div>
           <h2 className="text-2xl font-bold mt-4 bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text">
-            Welcome Back
+            Welcome  Back
           </h2>
-        </div>
+        </div> 
 
         {showForgotPassword ? (
           <ForgotPasswordForm onBack={() => setShowForgotPassword(false)} />
