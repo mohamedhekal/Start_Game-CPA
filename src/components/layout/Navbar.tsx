@@ -11,7 +11,7 @@ export const Navbar: React.FC = () => {
           <Link to="/" className="flex items-center space-x-2">
             <GamepadIcon className="w-8 h-8 text-purple-500" />
             <span className="text-xl font-bold bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text">
-              Star Games
+              Star Game
             </span>
           </Link>
           
