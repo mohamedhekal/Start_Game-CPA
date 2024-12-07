@@ -7,9 +7,21 @@ export interface User {
 export interface LoginCredentials {
   email: string;
   password: string;
+  acceptTerms: boolean;
 }
 
-export interface RegisterCredentials extends LoginCredentials {
-  username: string;
+export interface RegisterCredentials {
+  email: string;
+  company: string;
+  phone: string;
+  firstName: string;
+  lastName: string;
+  photo: File | null;
+  address: string;
+  city: string;
+  country: string;
+  postalCode: string;
+  password: string;
   confirmPassword: string;
+  acceptTerms: boolean;
 }

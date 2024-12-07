@@ -11,7 +11,8 @@ export const Login: React.FC = () => {
   const [showForgotPassword, setShowForgotPassword] = useState(false);
   const [credentials, setCredentials] = useState<LoginCredentials>({
     email: '',
-    password: ''
+    password: '',
+    acceptTerms: false
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -31,7 +32,7 @@ export const Login: React.FC = () => {
             <GamepadIcon className="w-12 h-12 text-purple-500 mx-auto" />
           </motion.div>
           <h2 className="text-2xl font-bold mt-4 bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text">
-            Welcome  Back
+            Welcome Back Gamer
           </h2>
         </div> 
 
@@ -64,6 +65,25 @@ export const Login: React.FC = () => {
                   className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-500 focus:border-transparent"
                   required
                 />
+              </div>
+
+              <div className="flex items-center justify-between">
+                <div className="flex items-center">
+                  <input
+                    type="checkbox"
+                    id="terms"
+                    checked={credentials.acceptTerms}
+                    onChange={(e) => setCredentials({ ...credentials, acceptTerms: e.target.checked })}
+                    className="h-4 w-4 text-purple-500 focus:ring-purple-500 border-gray-300 rounded"
+                    required
+                  />
+                  <label htmlFor="terms" className="ml-2 block text-sm text-gray-700">
+                    I agree to the{' '}
+                    <a href="/terms" className="text-purple-500 hover:text-purple-600">
+                      Terms and Conditions
+                    </a>
+                  </label>
+                </div>
               </div>
 
               <div className="flex items-center justify-end">

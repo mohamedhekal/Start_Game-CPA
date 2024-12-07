@@ -16,7 +16,7 @@ export const MarketingSection: React.FC = () => {
             <h2 className="text-4xl font-bold text-white">
               Level Up Your Gaming Revenue with{' '}
               <span className="bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text">
-                Star Game
+                Star Games
               </span>
             </h2>
             <p className="text-xl text-gray-300">
